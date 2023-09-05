@@ -1,0 +1,23 @@
+.row .row-customHeader {
+  height: 100vh;
+  align-items: center;
+}
+@keyframes enlarge {
+  0% {
+    transform: scale(1); /* Inizio: nessun ingrandimento */
+  }
+  50% {
+    transform: scale(1.2); /* Metà dell'animazione: ingrandisce */
+  }
+  100% {
+    transform: scale(1); /* Fine: torna alla dimensione originale */
+  }
+}
+
+h1 {
+  animation: enlarge 3s infinite; /* Applica l'animazione per 3 secondi in modo infinito */
+}
+
+h2 {
+  font-size: 2rem;
+}
