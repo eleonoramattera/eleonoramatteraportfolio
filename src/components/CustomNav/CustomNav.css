@@ -1,0 +1,14 @@
+/* Stile per l'icona di Github */
+.socialIcons {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-left: 0.5em;
+}
+
+.box {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
