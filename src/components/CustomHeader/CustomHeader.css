@@ -1,23 +1,18 @@
-.row .row-customHeader {
+.row.row-customRow {
   height: 100vh;
+  display: flex;
   align-items: center;
-}
-@keyframes enlarge {
-  0% {
-    transform: scale(1); /* Inizio: nessun ingrandimento */
-  }
-  50% {
-    transform: scale(1.2); /* Metà dell'animazione: ingrandisce */
-  }
-  100% {
-    transform: scale(1); /* Fine: torna alla dimensione originale */
-  }
-}
-
-h1 {
-  animation: enlarge 3s infinite; /* Applica l'animazione per 3 secondi in modo infinito */
+  justify-content: center;
+  width: 50%;
+  margin: auto;
 }
 
 h2 {
-  font-size: 2rem;
+  display: flex;
+  margin-right: 1.2rem;
+  font-size: 3rem;
+}
+
+img {
+  display: flex;
 }
