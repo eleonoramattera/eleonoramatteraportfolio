@@ -5,6 +5,8 @@ import eleonora from "../../assets/eleonora.png";
 import margherita from "../../assets/margherita.svg";
 import CustomNav from "../CustomNav/CustomNav";
 import Jobs from "../Jobs/Jobs";
+import Skills from "../Skills/Skills";
+import Training from "../Training/Training";
 import "./CustomHeader.css";
 
 function CustomHeader() {
@@ -39,6 +41,8 @@ function CustomHeader() {
         <>
           <CustomNav animateNav={showAlternateContent} />
           <Jobs animateJobs={showAlternateContent} />
+          <Skills animateSkills={showAlternateContent} />
+          <Training />
         </>
       ) : (
         <Row className="row-customRow">
