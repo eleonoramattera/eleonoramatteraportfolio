@@ -8,27 +8,20 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillBehanceCircle } from "react-icons/ai";
 import logo from "../../assets/margherita.svg";
 import "./CustomNav.css";
-import { ScrollMagic } from "scrollmagic/controller"; //
 
 function CustomNav({ animateNav }) {
   useEffect(() => {
     if (animateNav) {
       gsap.from(".customNav", { opacity: 0, y: -50, duration: 2 });
-      const controller = new ScrollMagic.Controller();
-
-      // Esempio di animazione con gsap
-      const logoRotation = gsap.to(".logo", {
-        rotation: 360, // Angolo di rotazione desiderato
-        ease: "none", // Nessuna animazione di easing
+      gsap.to(".logo", {
+        rotation: 900,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".App",
+          scrub: 5,
+          markers: true,
+        },
       });
-
-      new ScrollMagic.Scene({
-        triggerElement: ".customNav",
-        duration: "100%",
-        triggerHook: 0,
-      })
-        .setTween(logoRotation)
-        .addTo(controller);
     }
   }, [animateNav]);
 
