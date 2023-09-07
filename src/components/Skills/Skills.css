@@ -1,0 +1,23 @@
+.row.row-mainRow {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: white;
+}
+
+.programSkills {
+  font-size: 4em;
+  margin-right: 0.2em;
+}
+
+.skillsContainer {
+  height: 50%;
+}
+
+.fb {
+  text-align: start;
+}
