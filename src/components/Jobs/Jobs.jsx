@@ -7,24 +7,21 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DownloadCv from "../DownloadCv/DownloadCv";
 
 gsap.registerPlugin(ScrollTrigger);
+
 function Jobs({ animateJobs }) {
   useEffect(() => {
     if (animateJobs) {
       // Esegui un'animazione quando animateNav è true
-      gsap.from("h1, .jobs", { opacity: 1, x: -50, duration: 2 }, "<");
-      gsap.from(".eleonoraImg", { opacity: 1, x: +50, delay: 0.2, duration: 2 }, "<");
+      gsap.from("h1, .jobs, .eleonoraImg", { y: -50, duration: 2 }, "<");
+      //   gsap.from(".eleonoraImg", { x: +50, delay: 0.2, duration: 2 }, "<");
 
-      gsap.from(".presentation", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        delay: 1,
+      gsap.to(".presentation", {
+        x: +90,
+        duration: 2,
         scrollTrigger: {
-          trigger: ".jobs",
-          start: "top bottom",
-          end: "top top",
-          scrub: true,
-          toggleActions: "restart pause reverse pause",
+          trigger: ".App",
+          scrub: 2,
+          markers: false,
         },
       });
     }
@@ -44,8 +41,8 @@ function Jobs({ animateJobs }) {
           <img src={eleonora} alt="immagine personale" width="100%" className="eleonoraImg" />
         </Col>
       </Row>
-      <Row className=" mx-5 presentation text-start">
-        <Col xs={6}>
+      <Row className=" mx-5 mb-5 presentation text-start">
+        <Col xs={6} className="presentation">
           <p>
             Ciao, sono Eleonora Mattera, una giovane Junior Full Stack Developer e Graphic Designer. La mia passione
             combina l'arte della grafica con la logica della programmazione, consentendomi di creare esperienze
@@ -54,7 +51,7 @@ function Jobs({ animateJobs }) {
             competenze spaziano dalla progettazione di interfacce accattivanti alla scrittura di codice efficiente.
             Cerco costantemente opportunità per crescere come professionista e mettere in pratica la mia creatività.
           </p>
-          <DownloadCv />
+          <DownloadCv className="mb-5" />
         </Col>
       </Row>
     </>
