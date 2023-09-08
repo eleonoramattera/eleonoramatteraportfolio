@@ -2,6 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import photoshop from "../../assets/photoshop.svg";
 import illustrator from "../../assets/illustrator.svg";
 import indesign from "../../assets/indesign.svg";
+import ligthroom from "../../assets/lightroom.svg";
 import html from "../../assets/html5.svg";
 import css from "../../assets/css3.svg";
 import bootstrap from "../../assets/bootstrap.svg";
@@ -18,6 +19,8 @@ import github from "../../assets/github.svg";
 import postgresql from "../../assets/postgreesql.svg";
 import jwt from "../../assets/jwt.svg";
 import discord from "../../assets/discord.svg";
+import postman from "../../assets/postman.svg";
+import eclipse from "../../assets/eclipse.svg";
 import vs from "../../assets/visualstudiocode.svg";
 import { gsap } from "gsap";
 import { useEffect } from "react";
@@ -40,9 +43,9 @@ function Skills({ animateSkills }) {
 
       gsap.from(".skills", {
         duration: 4,
-        opacity: 0,
-        x: +200,
-        scrollTrigger: { trigger: "body", scrub: 2, markers: false },
+
+        x: +100,
+        scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
       });
     }
   }, [animateSkills]);
@@ -80,31 +83,40 @@ function Skills({ animateSkills }) {
               <img src={spring} alt="logo spring" className="programSkills" />
               <img src={jwt} alt="logo jwt" className="programSkills" />
             </div>
-            <div className="d-flex">
+            <div>
               <img src={postgresql} alt="logo postgresql" className="programSkills" />
+            </div>
+            <div className="d-flex">
               <img src={node} alt="logo node" className="programSkills" />
             </div>
           </div>
         </Col>
 
         <Col xs={6} className="graphicSkills">
-          <h5>GRAPHIC DESIGN SKILLS </h5>
-          <div className="d-flex justify-content-center mt-5 h-50 skillsContainer">
-            <img src={photoshop} alt="logo photoshop" className=" programSkills" />
-            <img src={illustrator} alt="logo illustrator" className=" programSkills" />
-            <img src={indesign} alt="logo indesign" className=" programSkills" />
+          <h5 className="fb">GRAPHIC DESIGN SKILLS </h5>
+          <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
+            <div className="d-flex">
+              <img src={photoshop} alt="logo photoshop" className=" programSkills" />
+              <img src={illustrator} alt="logo illustrator" className=" programSkills" />
+              <img src={indesign} alt="logo indesign" className=" programSkills" />
+            </div>
+            <div>
+              <img src={ligthroom} alt="logo lightroom" className=" programSkills" />
+            </div>
           </div>
         </Col>
-        <Col xs={6}>
-          <h5>TOOL SKILLS</h5>
-          <div className="d-flex justify-content-center mt-5 h-50 skillsContainer">
+        <Col xs={6} className="d-flex flex-column align-items-end">
+          <h5 className="fb">TOOL SKILLS</h5>
+          <div className="d-flex flex-column  mt-5 h-50  skillsContainer">
             <div className="d-flex">
-              <img src={git} alt="logo git" className="programSkills" />
               <img src={github} alt="logo github" className="programSkills" />
+              <img src={git} alt="logo git" className="programSkills" />
+              <img src={discord} alt="logo discord" className="programSkills" />
             </div>
             <div className="d-flex">
               <img src={vs} alt="logo visual studio code" className="programSkills" />
-              <img src={discord} alt="logo discord" className="programSkills" />
+              <img src={eclipse} alt="logo eclipse" className="programSkills" />
+              <img src={postman} alt="logo postman" className="programSkills" />
             </div>
           </div>
         </Col>
