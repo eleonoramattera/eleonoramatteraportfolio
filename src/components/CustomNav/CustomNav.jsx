@@ -6,10 +6,21 @@ import { Link } from "react-router-dom";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillBehanceCircle } from "react-icons/ai";
+import { BsWhatsapp } from "react-icons/bs";
+import { HiMail } from "react-icons/hi";
 import logo from "../../assets/margherita.svg";
 import "./CustomNav.css";
 
 function CustomNav({ animateNav }) {
+  //WHATSAPP
+  const phoneNumber = "+39 3338868076";
+  const message = "Ciao, ho visitato il tuo sito..";
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+
+  //MAIL
+  const indirizzoEmail = "m.eleonora98@live.com";
+  const emailLink = `mailto:${indirizzoEmail}`;
+
   useEffect(() => {
     if (animateNav) {
       gsap.from(".customNav", { opacity: 0, y: -50, duration: 2 });
@@ -41,6 +52,12 @@ function CustomNav({ animateNav }) {
           </Link>
           <Link to="https://www.behance.net/eleonoramattera">
             <AiFillBehanceCircle className="socialIcons " />
+          </Link>
+          <Link to={whatsappUrl} target="_blank" rel="noreferrer">
+            <BsWhatsapp className="socialIcons " />
+          </Link>
+          <Link to={emailLink} target="_blank" rel="noreferrer">
+            <HiMail className="socialIcons " />
           </Link>
         </Navbar.Collapse>
       </Container>
