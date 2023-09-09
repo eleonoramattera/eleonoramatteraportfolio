@@ -29,18 +29,6 @@ import "./Skills.css";
 function Skills({ animateSkills }) {
   useEffect(() => {
     if (animateSkills) {
-      // Esegui un'animazione quando animateNav è true
-      //   gsap.from(", .jobs, .eleonoraImg", { y: -50, duration: 2 }, "<");
-      //   gsap.to(".frontendSkills", {
-      //     x: +80,
-      //     duration: 2,
-      //     scrollTrigger: {
-      //       trigger: "body",
-      //       scrub: 2,
-      //       markers: false,
-      //     },
-      //   });
-
       gsap.from(".skills", {
         duration: 4,
 

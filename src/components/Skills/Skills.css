@@ -12,6 +12,11 @@ h3 {
 .programSkills {
   font-size: 4em;
   margin-right: 0.2em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programSkills:hover {
+  transform: scale(2);
 }
 
 .skillsContainer {
