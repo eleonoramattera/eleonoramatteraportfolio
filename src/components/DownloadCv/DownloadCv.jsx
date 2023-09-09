@@ -1,15 +1,14 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./DownloadCv.css";
 
 function DownloadCv() {
-  const pdfURL = "https:/path/file.pdf";
-  //creare server
+  const pdfURL = "https://drive.google.com/drive/folders/1KptnJsz4LIun5RTDZCF8dbazZuvBWt-1";
 
   return (
-    <a href={pdfURL} download="nomefile.pdf">
-      <button>Scarica CV</button>
-    </a>
+    <Link to={pdfURL} target="_blank" download className="cv">
+      Visualizza curriculum vitae
+    </Link>
   );
 }
 
