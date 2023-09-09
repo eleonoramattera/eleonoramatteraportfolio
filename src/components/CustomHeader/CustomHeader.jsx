@@ -1,12 +1,12 @@
 import { Row, Col } from "react-bootstrap";
 import { gsap } from "gsap";
 import { useEffect, useState } from "react";
-import eleonora from "../../assets/eleonora.png";
 import margherita from "../../assets/margherita.svg";
 import CustomNav from "../CustomNav/CustomNav";
 import Jobs from "../Jobs/Jobs";
 import Skills from "../Skills/Skills";
 import Training from "../Training/Training";
+import Project from "../Projects/Project";
 import "./CustomHeader.css";
 
 function CustomHeader() {
@@ -43,6 +43,7 @@ function CustomHeader() {
           <Jobs animateJobs={showAlternateContent} />
           <Skills animateSkills={showAlternateContent} />
           <Training animateTraining={showAlternateContent} />
+          <Project />
         </>
       ) : (
         <Row className="row-customRow">
