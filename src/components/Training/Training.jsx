@@ -2,32 +2,79 @@ import { Row, Col } from "react-bootstrap";
 import epicode from "../../assets/epicode.jpg";
 import pcacademy from "../../assets/pcacademy.png";
 import unina from "../../assets/unina.png";
-function Training() {
+import { gsap } from "gsap";
+import { useEffect } from "react";
+
+import "./Training.css";
+
+function Training({ animateTraining }) {
+  useEffect(() => {
+    if (animateTraining) {
+      gsap.from(".training", {
+        duration: 4,
+        x: -100,
+        scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
+      });
+    }
+  }, [animateTraining]);
+
   return (
-    <Row className="row-mainRow">
+    <Row className="row-customRow mt-5  training px-4">
       <h3>TRAINING</h3>
-      <Col xs={12} className="d-flex">
-        <img src={epicode} alt="logo epicode" />
-        <div>
-          <h4>EPICODE</h4>
-          <h5>2022-2023</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsam facere itaque quas velit impedit
-            fugiat nulla cum ullam quod odio modi perferendis hic omnis consequuntur vel eveniet veniam, eius deserunt
-            atque! Porro autem nihil minus ducimus animi nesciunt assumenda? Adipisci similique deleniti minima repellat
-            quidem dolor consequatur aspernatur labore illum id eaque consectetur incidunt possimus vitae totam, odit
-            ducimus facilis expedita quaerat, minus mollitia ullam dolorem iure. Eveniet distinctio quae cumque officia
-            ipsa accusantium harum, maiores unde quos doloribus autem beatae laudantium suscipit voluptas sequi
-            asperiores, eius cum iste repellendus, et esse quas. Incidunt natus suscipit molestiae. Officiis ab vel
-            neque aspernatur expedita, veniam, minus id earum dignissimos qui architecto quisquam.
+
+      <Col xs={12} className="d-flex flex-column my-4 ">
+        <Col className="d-flex flex-column my-4 position-relative">
+          <figure>
+            <img src={epicode} alt="logo epicode" />
+            <figcaption>
+              <p>
+                Full-stack Developer <br /> 2022-2023
+              </p>
+            </figcaption>
+          </figure>
+          <p className="border_p">
+            Corso intensivo full-stack con un approccio che combina teoria e pratica, mi ha permesso di applicare le
+            conoscenze apprese attraverso progetti reali, sia individualmente che in collaborazione con altri,
+            consentendmi di acquisire esperienza diretta in ogni aspetto dello sviluppo web full-stack.
           </p>
-        </div>
-      </Col>
-      <Col xs={12}>
-        <img src={pcacademy} alt="logo epicode" />
-      </Col>
-      <Col xs={12}>
-        <img src={unina} alt="logo epicode" />
+          <span className="right"></span>
+          <span className="left"></span>
+        </Col>
+
+        <Col className="d-flex flex-column my-4 position-relative">
+          <figure>
+            <img src={pcacademy} alt="logo pc academy" />
+            <figcaption>
+              <p>
+                Master in Grafica Editoriale, Web Design & eCommerce <br /> 2020-2021
+              </p>
+            </figcaption>
+          </figure>
+          <p className="border_p">
+            Corso multidisciplinare che mi ha permesso di coniugare le competenze di grafica e web design offrendomi una
+            formazione completa che abbraccia entrambi questi campi creativi e complementari.
+          </p>
+          <span className="right"></span>
+          <span className="left"></span>
+        </Col>
+
+        <Col className="d-flex flex-column my-4 position-relative">
+          <figure>
+            <img src={unina} alt="logo unina" />
+            <figcaption>
+              <p>
+                Laurea triennale in Culture Digitali e della Comunicazione <br /> 2016-2020
+              </p>
+            </figcaption>
+          </figure>
+          <p className="border_p">
+            Percorso di studi che ha rappresentato un solido punto di partenza per la mia carriera nel web design e in
+            campi correlati. Durante il corso di laurea, ho acquisito competenze e conoscenze che sono rilevanti per il
+            web design e la comunicazione digitale.
+          </p>
+          <span className="right"></span>
+          <span className="left"></span>
+        </Col>
       </Col>
     </Row>
   );
