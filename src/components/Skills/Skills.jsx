@@ -47,18 +47,18 @@ function Skills({ animateSkills }) {
           <h5 className="fb"> FRONT END SKILLS</h5>
           <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
             <div className="d-flex">
-              <img src={html} alt="logo HTML" className="programSkills" />
-              <img src={css} alt="logo CSS" className=" programSkills" />
-              <img src={bootstrap} alt="logo bootstrap" className="programSkills" />
-              <img src={sass} alt="logo sass" className="programSkills" />
+              <img src={html} alt="logo HTML" className="programSkills" title="HTML" />
+              <img src={css} alt="logo CSS" className=" programSkills" title="CSS3" />
+              <img src={bootstrap} alt="logo bootstrap" className="programSkills" title="Bootstrap" />
+              <img src={sass} alt="logo sass" className="programSkills" title="SASS" />
             </div>
             <div className="d-flex">
-              <img src={javascript} alt="logo javascript" className="programSkills" />
-              <img src={typescript} alt="logo typescript" className="programSkills" />
+              <img src={javascript} alt="logo javascript" className="programSkills" title="Javascript" />
+              <img src={typescript} alt="logo typescript" className="programSkills" title="Typescript" />
             </div>
             <div className="d-flex">
-              <img src={react} alt="logo react" className="programSkills" />
-              <img src={redux} alt="logo redux" className="programSkills" />
+              <img src={react} alt="logo react" className="programSkills" title="React" />
+              <img src={redux} alt="logo redux" className="programSkills" title="Redux" />
             </div>
           </div>
         </Col>
@@ -67,15 +67,15 @@ function Skills({ animateSkills }) {
           <h5 className="fb"> BACK END SKILLS</h5>
           <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
             <div className="d-flex">
-              <img src={java} alt="logo java" className="programSkills" />
-              <img src={spring} alt="logo spring" className="programSkills" />
-              <img src={jwt} alt="logo jwt" className="programSkills" />
+              <img src={java} alt="logo java" className="programSkills" title="Java" />
+              <img src={spring} alt="logo spring" className="programSkills" title="Spring" />
+              <img src={jwt} alt="logo jwt" className="programSkills" title="JWT" />
             </div>
             <div>
-              <img src={postgresql} alt="logo postgresql" className="programSkills" />
+              <img src={postgresql} alt="logo postgresql" className="programSkills" title="PostgreSQL" />
             </div>
             <div className="d-flex">
-              <img src={node} alt="logo node" className="programSkills" />
+              <img src={node} alt="logo node" className="programSkills" title="Node.JS" />
             </div>
           </div>
         </Col>
@@ -84,12 +84,12 @@ function Skills({ animateSkills }) {
           <h5 className="fb">GRAPHIC DESIGN SKILLS </h5>
           <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
             <div className="d-flex">
-              <img src={photoshop} alt="logo photoshop" className=" programSkills" />
-              <img src={illustrator} alt="logo illustrator" className=" programSkills" />
-              <img src={indesign} alt="logo indesign" className=" programSkills" />
+              <img src={photoshop} alt="logo photoshop" className=" programSkills" title="Photoshop" />
+              <img src={illustrator} alt="logo illustrator" className=" programSkills" title="Illustrator" />
+              <img src={indesign} alt="logo indesign" className=" programSkills" title="InDesign" />
             </div>
             <div>
-              <img src={ligthroom} alt="logo lightroom" className=" programSkills" />
+              <img src={ligthroom} alt="logo lightroom" className=" programSkills" title="Ligthroom" />
             </div>
           </div>
         </Col>
@@ -97,14 +97,14 @@ function Skills({ animateSkills }) {
           <h5 className="fb">TOOL SKILLS</h5>
           <div className="d-flex flex-column  mt-5 h-50  skillsContainer">
             <div className="d-flex">
-              <img src={github} alt="logo github" className="programSkills" />
-              <img src={git} alt="logo git" className="programSkills" />
-              <img src={discord} alt="logo discord" className="programSkills" />
+              <img src={github} alt="logo github" className="programSkills" title="Github" />
+              <img src={git} alt="logo git" className="programSkills" title="Git" />
+              <img src={discord} alt="logo discord" className="programSkills" title="Discord" />
             </div>
             <div className="d-flex">
-              <img src={vs} alt="logo visual studio code" className="programSkills" />
-              <img src={eclipse} alt="logo eclipse" className="programSkills" />
-              <img src={postman} alt="logo postman" className="programSkills" />
+              <img src={vs} alt="logo visual studio code" className="programSkills" title="Visual Studio Code" />
+              <img src={eclipse} alt="logo eclipse" className="programSkills" title="Eclipse IDE" />
+              <img src={postman} alt="logo postman" className="programSkills" title="Postman" />
             </div>
           </div>
         </Col>
