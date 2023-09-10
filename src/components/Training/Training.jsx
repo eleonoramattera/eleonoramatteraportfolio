@@ -13,7 +13,7 @@ function Training({ animateTraining }) {
       gsap.from(".training", {
         duration: 4,
         x: -100,
-        scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
+        scrollTrigger: { trigger: "body", scrub: 2, markers: false },
       });
     }
   }, [animateTraining]);
@@ -37,8 +37,8 @@ function Training({ animateTraining }) {
             conoscenze apprese attraverso progetti reali, sia individualmente che in collaborazione con altri,
             consentendmi di acquisire esperienza diretta in ogni aspetto dello sviluppo web full-stack.
           </p>
-          <span className="right"></span>
-          <span className="left"></span>
+          <span className="right1"></span>
+          <span className="left1"></span>
         </Col>
 
         <Col className="d-flex flex-column my-4 position-relative">
@@ -54,8 +54,8 @@ function Training({ animateTraining }) {
             Corso multidisciplinare che mi ha permesso di coniugare le competenze di grafica e web design offrendomi una
             formazione completa che abbraccia entrambi questi campi creativi e complementari.
           </p>
-          <span className="right"></span>
-          <span className="left"></span>
+          <span className="right2"></span>
+          <span className="left2"></span>
         </Col>
 
         <Col className="d-flex flex-column my-4 position-relative">
@@ -72,8 +72,8 @@ function Training({ animateTraining }) {
             campi correlati. Durante il corso di laurea, ho acquisito competenze e conoscenze che sono rilevanti per il
             web design e la comunicazione digitale.
           </p>
-          <span className="right"></span>
-          <span className="left"></span>
+          <span className="right3"></span>
+          <span className="left3                                                                                                                                                          "></span>
         </Col>
       </Col>
     </Row>

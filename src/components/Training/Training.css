@@ -1,9 +1,11 @@
 figure {
   margin: 0;
 }
+
 figure > img {
   display: inline-block;
 }
+
 figure + p {
   color: white;
   text-align: justify;
@@ -15,7 +17,9 @@ span {
   border-radius: 100vmax;
 }
 
-.right {
+.right1,
+.right2,
+.right3 {
   top: 0;
   right: 0;
   width: 5px;
@@ -23,7 +27,9 @@ span {
   background: linear-gradient(180deg, transparent 30%, #c67eae, #e1a2cc);
 }
 
-.left {
+.left1,
+.left2,
+.left3 {
   left: 0;
   bottom: 0;
   width: 5px;
@@ -31,14 +37,32 @@ span {
   background: linear-gradient(180deg, #e1a2cc, #c67eae, transparent 70%);
 }
 
-.right {
+.right1 {
   animation: animateRight 3s ease-in-out infinite;
 }
 
-.left {
+.left1 {
   animation: animateLeft 3s ease-in-out infinite;
 }
 
+.right2 {
+  animation: animateRight 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.left2 {
+  animation: animateLeft 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+.right3 {
+  animation: animateRight 3s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+.left3 {
+  animation: animateLeft 3s ease-in-out infinite;
+  animation-delay: 4s;
+}
 @keyframes animateRight {
   0%,
   25% {
