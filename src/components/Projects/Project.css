@@ -1,0 +1,20 @@
+.card {
+  background-color: black;
+  height: 22em;
+}
+
+.card button,
+.modal button {
+  padding: 0.2em;
+  margin-right: 0.2em;
+  background-color: #cc87b8;
+  border: none;
+}
+
+.card button:hover,
+.modal button:hover {
+  background-color: #aa6e99;
+}
+.modal img {
+  width: 100%;
+}
