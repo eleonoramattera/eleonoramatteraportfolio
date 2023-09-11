@@ -43,7 +43,7 @@ function CustomHeader() {
           <Jobs animateJobs={showAlternateContent} />
           <Skills animateSkills={showAlternateContent} />
           <Training animateTraining={showAlternateContent} />
-          <Project />
+          <Project animateProject={showAlternateContent} />
         </>
       ) : (
         <Row className="row-customRow">
