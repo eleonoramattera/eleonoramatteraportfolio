@@ -1,9 +1,14 @@
-figure {
-  margin: 0;
+.row.row-simpleLargeRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 6em auto;
 }
 
 figure > img {
   display: inline-block;
+  margin-top: 3em;
 }
 
 figure + p {
@@ -12,90 +17,21 @@ figure + p {
   padding: 0 0.5em;
 }
 
-span {
-  position: absolute;
-  border-radius: 100vmax;
+.carousel {
+  width: 100%;
+}
+.carousel-item {
+  height: 400px;
 }
 
-.right1,
-.right2,
-.right3 {
-  top: 0;
-  right: 0;
-  width: 5px;
-  height: 0;
-  background: linear-gradient(180deg, transparent 30%, #c67eae, #e1a2cc);
+.carousel-caption {
+  color: #c67eae;
+}
+.carousel-caption p {
+  color: #ffffff;
+  text-align: justify;
 }
 
-.left1,
-.left2,
-.left3 {
-  left: 0;
-  bottom: 0;
-  width: 5px;
-  height: 0;
-  background: linear-gradient(180deg, #e1a2cc, #c67eae, transparent 70%);
-}
-
-.right1 {
-  animation: animateRight 3s ease-in-out infinite;
-}
-
-.left1 {
-  animation: animateLeft 3s ease-in-out infinite;
-}
-
-.right2 {
-  animation: animateRight 3s ease-in-out infinite;
-  animation-delay: 2s;
-}
-
-.left2 {
-  animation: animateLeft 3s ease-in-out infinite;
-  animation-delay: 2s;
-}
-.right3 {
-  animation: animateRight 3s ease-in-out infinite;
-  animation-delay: 4s;
-}
-
-.left3 {
-  animation: animateLeft 3s ease-in-out infinite;
-  animation-delay: 4s;
-}
-@keyframes animateRight {
-  0%,
-  25% {
-    opacity: 0;
-    height: 0;
-  }
-
-  50% {
-    opacity: 1;
-    height: 100%;
-  }
-
-  55%,
-  100% {
-    height: 100%;
-    opacity: 0;
-  }
-}
-
-@keyframes animateLeft {
-  0%,
-  25% {
-    opacity: 0;
-    height: 0;
-  }
-  50% {
-    opacity: 1;
-    height: 100%;
-  }
-
-  55%,
-  100% {
-    height: 100%;
-    opacity: 0;
-  }
+.carousel h5 {
+  font-weight: bolder;
 }
