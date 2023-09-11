@@ -2,12 +2,21 @@
   color: #ffffff;
   font-size: 2rem;
   margin-left: 0.5em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.box {
+.socialIcons:hover {
+  transform: scale(2);
+}
+
+/* .box {
   display: block;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
+} */
+
+.navbar {
+  background-color: rgb(22, 22, 22);
 }

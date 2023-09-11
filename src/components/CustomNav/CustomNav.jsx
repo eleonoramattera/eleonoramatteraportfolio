@@ -37,7 +37,7 @@ function CustomNav({ animateNav }) {
   }, [animateNav]);
 
   return (
-    <Navbar className="bg-body-tertiary customNav fixed-top">
+    <Navbar className="bg-body-tertiary fixed-top pt-2">
       <Container>
         <Navbar.Brand>
           <img src={logo} alt="logo" width={"40em"} className="logo" />
