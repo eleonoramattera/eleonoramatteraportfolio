@@ -1,20 +1,82 @@
 .card {
   background-color: black;
   height: 22em;
-}
-
-.card button,
-.modal button {
-  padding: 0.2em;
-  margin-right: 0.2em;
-  background-color: #cc87b8;
+  --bs-card-spacer-y: 2.5rem;
+  --bs-card-spacer-x: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 1.2em;
   border: none;
+  border-radius: 6px;
 }
 
-.card button:hover,
-.modal button:hover {
-  background-color: #aa6e99;
+.card:hover {
+  transform: scale(1.2);
+  z-index: 1;
 }
+.card-body {
+  padding: 1em;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 90%;
+  margin: 1.2em auto;
+}
+
+.modal-content {
+  background-color: black;
+  border: 6px solid #cc87b8;
+}
+
 .modal img {
   width: 100%;
+}
+
+.card a,
+.modal a {
+  background-color: #cc87b8;
+  text-decoration: none;
+  color: white;
+  padding: 0.2em;
+  margin-right: 0.2em;
+  border-radius: 6px;
+}
+
+.card a:hover,
+.modal a:hover {
+  background-color: #966187;
+}
+
+span {
+  position: absolute;
+  border-radius: 100vmax;
+}
+.bottom {
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #f4b4e2, #cc87b8, transparent 50%);
+}
+
+.bottom {
+  animation: animateBottom 3s ease-in-out infinite;
+}
+
+@keyframes animateBottom {
+  0%,
+  50% {
+    opacity: 0;
+    width: 0;
+  }
+
+  75% {
+    opacity: 1;
+    width: 100%;
+  }
+
+  76%,
+  100% {
+    opacity: 100%;
+  }
 }
