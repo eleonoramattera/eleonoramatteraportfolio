@@ -5,6 +5,14 @@
   justify-content: center;
 }
 
+.row.row-simpleRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 6em auto;
+}
+
 h3 {
   color: white;
 }
@@ -19,7 +27,6 @@ h3 {
   transform: scale(2);
   background-color: rgb(22, 22, 22);
   border-radius: 8px;
-  position: relative;
 }
 
 .skillsContainer {

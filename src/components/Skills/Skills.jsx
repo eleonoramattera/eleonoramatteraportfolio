@@ -40,8 +40,10 @@ function Skills({ animateSkills }) {
 
   return (
     <>
-      <Row className=" row-customRow x-5 skills">
-        <h3 className="mt-5"> SKILLS</h3>
+      <Row className=" row-simpleRow x-5 skills">
+        <h3 className="mt-5 position-relative" style={{ maxWidth: "70%" }}>
+          SKILLS<span class="bottom"></span>
+        </h3>
 
         <Col xs={6} className="frontendSkills">
           <h5 className="fb"> FRONT END SKILLS</h5>
