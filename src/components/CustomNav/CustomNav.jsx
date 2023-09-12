@@ -30,7 +30,7 @@ function CustomNav({ animateNav }) {
         scrollTrigger: {
           trigger: ".App",
           scrub: 5,
-          markers: true,
+          markers: false,
         },
       });
     }
