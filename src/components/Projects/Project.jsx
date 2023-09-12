@@ -32,8 +32,8 @@ function Project({ animateProject }) {
   }, [animateProject]);
 
   return (
-    <Row className="row-simpleRow mt-5 projects">
-      <h3 className="position-relative mb-5" style={{ maxWidth: "20%" }}>
+    <Row className="row-customRow mt-5 projects">
+      <h3 className="position-relative mb-5">
         PROJECTS <span class="bottom"></span>
       </h3>
 
@@ -72,7 +72,7 @@ function Project({ animateProject }) {
           <img src={polyhealth} alt="poject cover" className="mb-2" />
           <h5>Tecnologie</h5>
           <p> React, Redux, PostrgeSQL, SpringBoot, JWT.</p>
-          <h5>Description</h5>
+          <h5>Descrizione</h5>
           <p>
             Web app per la Clinica PolyHealth con l'obiettivo di semplificare il processo di prenotazione delle terapie.
             Gli utenti hanno la possibilità di scegliere tra diverse terapie e diverse sedi per effettuare le
@@ -92,7 +92,7 @@ function Project({ animateProject }) {
           <img src={appMeteo} alt="poject cover" className="mb-2" />
           <h5>Tecnologie</h5>
           <p> React, React Hooks, React Router</p>
-          <h5>Description</h5>
+          <h5>Descrizione</h5>
           <p>
             Applicazione meteorologica che consente agli utenti di cercare città e visualizzare le previsioni
             meteorologiche, comprese le temperature, per un massimo di cinque giorni.
