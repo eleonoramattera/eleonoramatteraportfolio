@@ -32,6 +32,7 @@ figure + p {
   text-align: justify;
 }
 
-.carousel h5 {
+.carousel h5,
+.carousel span {
   font-weight: bolder;
 }
