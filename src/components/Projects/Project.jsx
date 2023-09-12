@@ -42,6 +42,7 @@ function Project({ animateProject }) {
           <Card.Img variant="top" src={polyhealth} />
           <Card.Body>
             <Card.Title className="fw-bolder">POLYHEALTH</Card.Title>
+            <Card.Text>POLYHEALTH</Card.Text>
             <Card.Text>Capstone Project con Epicode</Card.Text>
             <Link to="https://github.com/eleonoramattera/PolyHealthCenter" target="_blank" rel="noreferrer">
               Visualizza codice
@@ -53,6 +54,7 @@ function Project({ animateProject }) {
           <Card.Img variant="top" src={appMeteo} />
           <Card.Body>
             <Card.Title className="fw-bolder">APP METEO</Card.Title>
+            <Card.Text>APP METEO</Card.Text>
             <Card.Text>BuildWeek con Epicode</Card.Text>
             <Link
               to="https://github.com/eleonoramattera/u3-w2-d5-progetto-settimanale"
