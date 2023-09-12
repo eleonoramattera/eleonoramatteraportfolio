@@ -18,6 +18,7 @@ import git from "../../assets/git.svg";
 import github from "../../assets/github.svg";
 import postgresql from "../../assets/postgreesql.svg";
 import jwt from "../../assets/jwt.svg";
+import npm from "../../assets/npm.svg";
 import discord from "../../assets/discord.svg";
 import postman from "../../assets/postman.svg";
 import eclipse from "../../assets/eclipse.svg";
@@ -80,6 +81,7 @@ function Skills({ animateSkills }) {
             </div>
             <div className="d-flex">
               <img src={node} alt="logo node" className="programSkills" title="Node.JS" />
+              <img src={npm} alt="logo npm" className="programSkills" title="npm" />
             </div>
           </div>
         </Col>
