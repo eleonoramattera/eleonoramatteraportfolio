@@ -22,6 +22,8 @@ import discord from "../../assets/discord.svg";
 import postman from "../../assets/postman.svg";
 import eclipse from "../../assets/eclipse.svg";
 import vs from "../../assets/visualstudiocode.svg";
+import wordprss from "../../assets/wordpress.svg";
+import woocommerce from "../../assets/woocommerce.svg";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 
@@ -40,7 +42,7 @@ function Skills({ animateSkills }) {
 
   return (
     <>
-      <Row className=" row-simpleRow x-5 skills">
+      <Row className=" row-customRow x-5 skills">
         <h3 className="mt-5 position-relative" style={{ maxWidth: "70%" }}>
           SKILLS<span class="bottom"></span>
         </h3>
@@ -101,12 +103,14 @@ function Skills({ animateSkills }) {
             <div className="d-flex">
               <img src={github} alt="logo github" className="programSkills" title="Github" />
               <img src={git} alt="logo git" className="programSkills" title="Git" />
-              <img src={discord} alt="logo discord" className="programSkills" title="Discord" />
-            </div>
-            <div className="d-flex">
               <img src={vs} alt="logo visual studio code" className="programSkills" title="Visual Studio Code" />
               <img src={eclipse} alt="logo eclipse" className="programSkills" title="Eclipse IDE" />
+            </div>
+            <div className="d-flex">
               <img src={postman} alt="logo postman" className="programSkills" title="Postman" />
+              <img src={discord} alt="logo discord" className="programSkills" title="Discord" />
+              <img src={wordprss} alt="logo wordpress" className="programSkills" title="WordPress" />
+              <img src={woocommerce} alt="logo woocommerce" className="programSkills" title=" WooCommerce" />
             </div>
           </div>
         </Col>
