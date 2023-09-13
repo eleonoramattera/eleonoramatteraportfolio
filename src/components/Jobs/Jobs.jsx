@@ -9,40 +9,44 @@ import DownloadCv from "../DownloadCv/DownloadCv";
 gsap.registerPlugin(ScrollTrigger);
 
 function Jobs({ animateJobs }) {
-  useEffect(() => {
-    if (animateJobs) {
-      // Esegui un'animazione quando animateNav è true
-      gsap.from("h1, .jobs, .eleonoraImg", { y: -50, duration: 2 }, "<");
-      //   gsap.from(".eleonoraImg", { x: +50, delay: 0.2, duration: 2 }, "<");
+  useEffect(
+    () => {
+      if (animateJobs && window.innerWidth >= 992) {
+        // Esegui un'animazione quando animateNav è true
+        gsap.from("h1, .jobs, .eleonoraImg", { y: -50, duration: 2 }, "<");
+        //   gsap.from(".eleonoraImg", { x: +50, delay: 0.2, duration: 2 }, "<");
 
-      gsap.to(".presentation", {
-        x: +90,
-        duration: 2,
-        scrollTrigger: {
-          trigger: ".App",
-          scrub: 2,
-          markers: false,
-        },
-      });
-    }
-  }, [animateJobs]);
+        gsap.to(".presentation", {
+          x: +100,
+          duration: 2,
+          scrollTrigger: {
+            trigger: ".App",
+            scrub: 2,
+            markers: false,
+          },
+        });
+      }
+    },
+    [animateJobs],
+    window.innerWidth >= 992
+  );
 
   return (
     <>
       <Row className="row-mainRow">
-        <Col xs={8}>
+        <Col xs={12} md={8}>
           <h1>ELEONORA MATTERA</h1>
           <div className="w-50 text-start mx-auto jobs">
             <h4 className="mb-2">JUNIOR FULL-STACK DEVELOPER</h4>
             <h4>GRAPHIC DESIGNER</h4>
           </div>
         </Col>
-        <Col xs={4}>
+        <Col md={4} className="d-none d-sm-block ">
           <img src={eleonora} alt="immagine personale" width="100%" className="eleonoraImg" />
         </Col>
       </Row>
-      <Row className=" mx-5 mb-5 presentation text-start">
-        <Col xs={6} className="presentation">
+      <Row className=" mx-2 mx-md-5 mb-5 presentation text-start">
+        <Col xs={12} md={6} lg={6} className="presentation  ">
           <p>
             Ciao, sono Eleonora Mattera, una giovane Junior Full Stack Developer e Graphic Designer. La mia passione
             combina l'arte della grafica con la logica della programmazione, consentendomi di creare esperienze
