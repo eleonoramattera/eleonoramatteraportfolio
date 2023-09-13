@@ -1,3 +1,11 @@
+.row.row-customSmallRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
 .card {
   background-color: black;
   height: 22em;

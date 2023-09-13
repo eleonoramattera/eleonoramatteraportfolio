@@ -20,25 +20,29 @@ function Project({ animateProject }) {
   const handleClose2 = () => setShow2(false);
   const handleShow2 = () => setShow2(true);
 
-  useEffect(() => {
-    if (animateProject) {
-      gsap.from(".projects", {
-        duration: 4,
+  useEffect(
+    () => {
+      if (animateProject && window.innerWidth >= 768) {
+        gsap.from(".projects", {
+          duration: 4,
 
-        x: +100,
-        scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
-      });
-    }
-  }, [animateProject]);
+          x: +100,
+          scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
+        });
+      }
+    },
+    [animateProject],
+    window.innerWidth >= 768
+  );
 
   return (
-    <Row className="row-customRow mt-5 projects">
+    <Row className="row-customSmallRow my-5 projects ">
       <h3 className="position-relative mb-5">
         PROJECTS <span class="bottom"></span>
       </h3>
 
-      <Col xs={12} className="d-flex">
-        <Card style={{ width: "50%" }} onClick={handleShow1}>
+      <Col xs={12} lg={6} className="d-flex">
+        <Card onClick={handleShow1} className="mt-5 mt-lg-0">
           <Card.Img variant="top" src={polyhealth} />
           <Card.Body>
             <Card.Title className="fw-bolder">POLYHEALTH</Card.Title>
@@ -49,8 +53,9 @@ function Project({ animateProject }) {
             </Link>
           </Card.Body>
         </Card>
-
-        <Card style={{ width: "50%" }} onClick={handleShow2} className="">
+      </Col>
+      <Col xs={12} lg={6}>
+        <Card onClick={handleShow2} className="mt-5 mt-lg-0">
           <Card.Img variant="top" src={appMeteo} />
           <Card.Body>
             <Card.Title className="fw-bolder">APP METEO</Card.Title>
