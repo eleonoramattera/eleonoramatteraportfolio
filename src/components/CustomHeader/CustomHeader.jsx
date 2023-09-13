@@ -48,7 +48,7 @@ function CustomHeader() {
       ) : (
         <Row className="row-customRow">
           <Col xs={12} className="d-flex">
-            <h2>WELCOME</h2>
+            <h2 className="pb-sm-4 pb-md-0">WELCOME</h2>
             <img className="margherita" src={margherita} alt={margherita} width={"50em"} />
           </Col>
         </Row>
