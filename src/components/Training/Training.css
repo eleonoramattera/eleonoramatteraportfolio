@@ -1,9 +1,7 @@
-.row.row-simpleLargeRow {
+.row.row-mainSmallRow {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 6em auto;
 }
 
 figure > img {
@@ -20,8 +18,28 @@ figure + p {
 .carousel {
   width: 100%;
 }
-.carousel-item {
-  height: 400px;
+
+/* da 768px in su*/
+@media (min-width: 768px) {
+  .carousel-item {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .carousel-item {
+    height: 470px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 640px;
+  }
+}
+@media (max-width: 367px) {
+  .carousel-item {
+    height: 790px;
+  }
 }
 
 .carousel-caption {

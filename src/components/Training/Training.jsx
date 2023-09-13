@@ -11,25 +11,29 @@ import { useEffect } from "react";
 import "./Training.css";
 
 function Training({ animateTraining }) {
-  useEffect(() => {
-    if (animateTraining) {
-      gsap.from(".training", {
-        duration: 4,
-        x: -100,
-        scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
-      });
-    }
-  }, [animateTraining]);
+  useEffect(
+    () => {
+      if (animateTraining && window.innerWidth >= 768) {
+        gsap.from(".training", {
+          duration: 4,
+          x: -100,
+          scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
+        });
+      }
+    },
+    [animateTraining],
+    window.innerWidth >= 768
+  );
 
   return (
-    <Row className="row-mainRow mt-5  training px-4">
-      <h3 className="position-relative">
+    <Row className="row-mainSmallRow mt-5  training px-4 my-md-auto ">
+      <h3 className="position-relative mt-5">
         TRAINING<span class="bottom"></span>
       </h3>
       <Col xs={12} className="d-flex flex-column my-4 ">
         <Carousel fade>
           <Carousel.Item>
-            <figure>
+            <figure className="d-none d-lg-block">
               <img src={epicode} alt="logo epicode" />
             </figure>
             <Carousel.Caption>
@@ -50,7 +54,7 @@ function Training({ animateTraining }) {
           </Carousel.Item>
 
           <Carousel.Item>
-            <figure>
+            <figure className="d-none d-lg-block">
               <img src={pcacademy} alt="logo pc academy" />
             </figure>
             <Carousel.Caption>
@@ -71,7 +75,7 @@ function Training({ animateTraining }) {
           </Carousel.Item>
 
           <Carousel.Item>
-            <figure>
+            <figure className="d-none d-lg-block">
               <img src={unina} alt="logo unina" />
             </figure>
             <Carousel.Caption>
