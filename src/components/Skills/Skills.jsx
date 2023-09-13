@@ -30,28 +30,32 @@ import { useEffect } from "react";
 
 import "./Skills.css";
 function Skills({ animateSkills }) {
-  useEffect(() => {
-    if (animateSkills) {
-      gsap.from(".skills", {
-        duration: 4,
+  useEffect(
+    () => {
+      if (animateSkills && window.innerWidth >= 768) {
+        gsap.from(".skills", {
+          duration: 4,
 
-        x: +100,
-        scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
-      });
-    }
-  }, [animateSkills]);
+          x: +100,
+          scrollTrigger: { trigger: ".App", scrub: 2, markers: false },
+        });
+      }
+    },
+    [animateSkills],
+    window.innerWidth >= 768
+  );
 
   return (
     <>
-      <Row className=" row-customRow x-5 skills">
-        <h3 className="mt-5 position-relative" style={{ maxWidth: "70%" }}>
+      <Row className=" row-customSmallRow x-5 skills">
+        <h3 className="mt-5 position-relative">
           SKILLS<span class="bottom"></span>
         </h3>
 
-        <Col xs={6} className="frontendSkills">
+        <Col xs={12} lg={6} className="frontendSkills">
           <h5 className="fb"> FRONT END SKILLS</h5>
-          <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
-            <div className="d-flex">
+          <div className="d-flex flex-column mt-5 h-50 skillsContainer">
+            <div className="d-flex mb-md-5 ">
               <img src={html} alt="logo HTML" className="programSkills" title="HTML" />
               <img src={css} alt="logo CSS" className=" programSkills" title="CSS3" />
               <img src={bootstrap} alt="logo bootstrap" className="programSkills" title="Bootstrap" />
@@ -68,7 +72,7 @@ function Skills({ animateSkills }) {
           </div>
         </Col>
 
-        <Col xs={6} className="d-flex flex-column align-items-end backendSkills">
+        <Col xs={12} lg={6} className="d-flex flex-column align-items-lg-end ">
           <h5 className="fb"> BACK END SKILLS</h5>
           <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
             <div className="d-flex">
@@ -86,7 +90,7 @@ function Skills({ animateSkills }) {
           </div>
         </Col>
 
-        <Col xs={6} className="graphicSkills">
+        <Col xs={12} lg={6}>
           <h5 className="fb">GRAPHIC DESIGN SKILLS </h5>
           <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
             <div className="d-flex">
@@ -99,7 +103,7 @@ function Skills({ animateSkills }) {
             </div>
           </div>
         </Col>
-        <Col xs={6} className="d-flex flex-column align-items-end">
+        <Col xs={12} lg={6} className="d-flex flex-column align-items-lg-end">
           <h5 className="fb">TOOL SKILLS</h5>
           <div className="d-flex flex-column  mt-5 h-50  skillsContainer">
             <div className="d-flex">
