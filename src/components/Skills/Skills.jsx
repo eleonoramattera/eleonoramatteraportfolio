@@ -52,10 +52,10 @@ function Skills({ animateSkills }) {
           SKILLS<span class="bottom"></span>
         </h3>
 
-        <Col xs={12} lg={6} className="frontendSkills">
+        <Col xs={12} lg={6} className="frontendSkills ">
           <h5 className="fb"> FRONT END SKILLS</h5>
-          <div className="d-flex flex-column mt-5 h-50 skillsContainer">
-            <div className="d-flex mb-md-5 ">
+          <div className="d-flex flex-column mb-5 h-50 skillsContainer">
+            <div className="d-flex  ">
               <img src={html} alt="logo HTML" className="programSkills" title="HTML" />
               <img src={css} alt="logo CSS" className=" programSkills" title="CSS3" />
               <img src={bootstrap} alt="logo bootstrap" className="programSkills" title="Bootstrap" />
@@ -74,7 +74,7 @@ function Skills({ animateSkills }) {
 
         <Col xs={12} lg={6} className="d-flex flex-column align-items-lg-end ">
           <h5 className="fb"> BACK END SKILLS</h5>
-          <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
+          <div className="d-flex flex-column mb-5 h-50 skillsContainer">
             <div className="d-flex">
               <img src={java} alt="logo java" className="programSkills" title="Java" />
               <img src={spring} alt="logo spring" className="programSkills" title="Spring" />
@@ -92,7 +92,7 @@ function Skills({ animateSkills }) {
 
         <Col xs={12} lg={6}>
           <h5 className="fb">GRAPHIC DESIGN SKILLS </h5>
-          <div className="d-flex flex-column  mt-5 h-50 skillsContainer">
+          <div className="d-flex flex-column mb-5 h-50 skillsContainer">
             <div className="d-flex">
               <img src={photoshop} alt="logo photoshop" className=" programSkills" title="Photoshop" />
               <img src={illustrator} alt="logo illustrator" className=" programSkills" title="Illustrator" />
@@ -105,7 +105,7 @@ function Skills({ animateSkills }) {
         </Col>
         <Col xs={12} lg={6} className="d-flex flex-column align-items-lg-end">
           <h5 className="fb">TOOL SKILLS</h5>
-          <div className="d-flex flex-column  mt-5 h-50  skillsContainer">
+          <div className="d-flex flex-column h-50   mb-5 skillsContainer">
             <div className="d-flex">
               <img src={github} alt="logo github" className="programSkills" title="Github" />
               <img src={git} alt="logo git" className="programSkills" title="Git" />
