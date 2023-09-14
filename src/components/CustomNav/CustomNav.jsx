@@ -37,13 +37,13 @@ function CustomNav({ animateNav }) {
   }, [animateNav]);
 
   return (
-    <Navbar className="bg-body-tertiary fixed-top pt-2">
+    <Navbar className=" fixed-top pt-2">
       <Container>
         <Navbar.Brand>
           <img src={logo} alt="logo" width={"40em"} className="logo" />
         </Navbar.Brand>
         <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
+        <Navbar.Collapse className=" justify-content-end">
           <Link to="https://github.com/eleonoramattera">
             <AiFillGithub className="socialIcons " />
           </Link>
