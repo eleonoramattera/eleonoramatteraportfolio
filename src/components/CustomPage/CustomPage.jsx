@@ -7,9 +7,9 @@ import Jobs from "../Jobs/Jobs";
 import Skills from "../Skills/Skills";
 import Training from "../Training/Training";
 import Project from "../Projects/Project";
-import "./CustomHeader.css";
+import "./CustomPage.css";
 
-function CustomHeader() {
+function CustomPage() {
   const [showAlternateContent, setShowAlternateContent] = useState(false);
 
   useEffect(() => {
@@ -57,4 +57,4 @@ function CustomHeader() {
   );
 }
 
-export default CustomHeader;
+export default CustomPage;
