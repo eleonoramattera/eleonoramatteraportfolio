@@ -34,14 +34,14 @@ function Jobs({ animateJobs }) {
   return (
     <>
       <Row className="row-mainRow">
-        <Col xs={12} md={8}>
+        <Col xs={12} md={8} className="p-0">
           <h1>ELEONORA MATTERA</h1>
           <div className="w-50 text-start mx-auto jobs">
             <h4 className="mb-2">JUNIOR FULL-STACK DEVELOPER</h4>
             <h4>GRAPHIC DESIGNER</h4>
           </div>
         </Col>
-        <Col md={4} className="d-none d-sm-block ">
+        <Col md={4} className="d-none d-sm-block p-0 ">
           <img src={eleonora} alt="immagine personale" width="100%" className="eleonoraImg" />
         </Col>
       </Row>
